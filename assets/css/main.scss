@@ -1,0 +1,66 @@
+---
+---
+@import "variables";
+
+@import "graph";
+
+// Tags
+html, body {
+    height: 100%
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $base-color2;
+    font-family: 'Roboto Slab';
+    font-size: 1.6rem;  
+}
+
+div {
+    padding: 1rem;
+}
+
+
+// General Use Classes
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+}
+
+
+// Specific Classes
+.bg-base {
+    background-color: $base-color;
+}
+
+
+// IDs
+#content-container {
+    padding: 0;
+    height: 90%;
+}
+
+#settings-container {
+    flex: 1;
+    margin-right: 1.5rem;
+    border-bottom-right-radius: 10px;
+}
+
+#visuals-container {
+    flex: 3;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+}
+
+#graph-container {
+    background-color: $base-color2;
+    border-radius: 10px;
+    height: 100%;
+    justify-content: center;
+}
