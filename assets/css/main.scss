@@ -1,7 +1,6 @@
 ---
 ---
 @import "variables";
-
 @import "graph";
 
 // Tags
@@ -29,8 +28,12 @@ div {
     display: flex;
 }
 
-.flex-child {
-    flex: 1;
+.bg-red {
+    background-color: $red-color;
+}
+
+.bg-green {
+    background-color: $green-color;
 }
 
 

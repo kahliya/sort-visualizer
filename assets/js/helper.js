@@ -18,3 +18,8 @@ function playNote(freq, duration) {
         osc.stop()
     }, duration);
 }
+
+function calculateNoteFreq(...objs) {
+    let totalHeight = objs.reduce((a, b) => a + b.height, 0);
+    return FREQ_MIN + (totalHeight/(objs.length*100)) * (FREQ_MAX - FREQ_MIN);
+}

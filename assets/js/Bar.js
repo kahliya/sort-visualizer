@@ -13,4 +13,19 @@ class Bar {
             return -1;
         }
     }
+
+    setColor(color) {
+        let classList = this.htmlElement.classList;
+        switch (color) {
+            case 'red': 
+                classList.add('bg-red');
+                break;
+            case 'green':
+                classList.add('bg-green');
+        }
+    }
+
+    resetColor(color) {
+        this.htmlElement.classList.remove('bg-red', 'bg-green');
+    }
 }

@@ -1,16 +1,7 @@
 .bar {
-    background-color: $pop-color;
+    background-color: $bar-default-color;
     box-sizing: border-box;
     margin: auto 0.2rem 0;
     padding: 0;
     flex: 1 1 0.1rem;
 }
-
-.bar-highlight {
-    background-color: $pop-color2;
-}
-
-.bar-complete {
-    background-color: $ok-color;
-}
-

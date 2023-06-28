@@ -1,4 +1,4 @@
-const FREQ_MIN = 200;
-const FREQ_MAX = 600;
+const FREQ_MIN = 400;
+const FREQ_MAX = 1000;
 
 let bars = initializeBars(15);
