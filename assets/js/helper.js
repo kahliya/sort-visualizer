@@ -4,6 +4,13 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i+1)); // Random idx from 0 to i
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+}
+
 function playNote(freq, duration) {
     const osc = audioCtx.createOscillator();
     const gainNode = audioCtx.createGain();

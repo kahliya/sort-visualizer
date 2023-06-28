@@ -1,20 +1,20 @@
 async function animateSortingComplete() {
     // Green sweeps across each bar
     for (let bar of bars) {
-        bar.htmlElement.classList.add('bar-complete');
+        bar.setColor('green');
         playNote(FREQ_MIN + bar.height/100 * (FREQ_MAX - FREQ_MIN), 50);
         await sleep(50);
-        bar.htmlElement.classList.remove('bar-complete');
+        bar.resetColor();
     }
 
     // All bars blink green together
     for (let bar of bars) {
-        bar.htmlElement.classList.add('bar-complete');
+        bar.setColor('green');
     }
 
     await sleep(250);
     for (let bar of bars) {
-        bar.htmlElement.classList.remove('bar-complete');
+        bar.resetColor();
     }
 }
 
